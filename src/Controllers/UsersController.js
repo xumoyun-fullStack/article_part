@@ -34,7 +34,7 @@ module.exports = class UsersController{
                 email,
                 "Verification link",
                 null,
-                `<p><a href="http://localhost:${PORT}/verify/${user.id}">Click here</a> to activate your account<?p>`
+                `<p><a href="https://articlepartapibx.onrender.com/verify/${user.id}">Click here</a> to activate your account<?p>`
             )
 
             res.cookie("token", token);
