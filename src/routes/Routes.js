@@ -12,7 +12,7 @@ router.get("/verify/:id", VerifyMail);
 router.post("/login", Login);
 router.post("/comment", AuthMiddleware, AddComment);
 
-router.post("/admin/create_article", AuthMiddleware, AdminMiddleware, AddArticle);
+router.post("/admin/create_article", AdminMiddleware, AddArticle);
 
 module.exports = {
     path: "/",
