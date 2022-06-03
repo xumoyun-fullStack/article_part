@@ -9,7 +9,7 @@ const AdminMiddleware = require("../middlewares/AdminMiddleware");
 router.get("/", GetArticles);
 router.post("/signup", Signup);
 router.get("/verify/:id", VerifyMail);
-router.post("/login", AuthMiddleware, Login);
+router.post("/login", Login);
 router.post("/comment", AuthMiddleware, AddComment);
 
 router.post("/admin/create_article", AuthMiddleware, AdminMiddleware, AddArticle);
